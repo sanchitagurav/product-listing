@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #__next {
+  height: 100%;
+}
+body {
+  @apply bg-white text-gray-800;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.card-img {
+  @apply w-full h-48 object-cover rounded-t-md;
+}
+:focus-visible {
+  outline: 3px solid rgba(59,130,246,0.4);
+  outline-offset: 2px;
+}
